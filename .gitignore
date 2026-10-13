@@ -1,0 +1,18 @@
+# OS / editor noise
+.DS_Store
+__pycache__/
+*.pyc
+
+# Obsidian app state (workspace history, plugin binaries, machine-local config)
+.obsidian/
+
+# Generated
+0 - System/_cache-archive.md
+0 - System/.backup/
+
+# The private folder ships empty; its contents are never committed
+3 - */*
+!3 - */.gitkeep
+
+# Local machine settings
+.claude/settings.local.json

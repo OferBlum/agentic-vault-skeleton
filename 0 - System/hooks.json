@@ -1,0 +1,12 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "command": "Read 0 - System/_cache.md for recent context before answering."
+    },
+    {
+      "event": "SessionEnd",
+      "command": "Add a block at the TOP of 0 - System/_cache.md, under the header: '## Session YYYY-MM-DD' with what was done, which files were touched, and any open questions. Then run `python3 \"0 - System/scripts/trim_cache.py\" 2` to keep only the 2 most recent sessions; older ones are moved to _cache-archive.md."
+    }
+  ]
+}
